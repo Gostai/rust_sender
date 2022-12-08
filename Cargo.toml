@@ -1,0 +1,19 @@
+[package]
+name = "rust_sender"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.clap]
+version = "3.2"
+features = ["derive"]
+
+[dependencies.anyhow]
+version = "1"
+
+[dependencies]
+tungstenite = "0.16.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.78"
+url = "2.2.2"
